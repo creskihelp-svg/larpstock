@@ -253,7 +253,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                 onClick={() => onNavigateTab('inventory')}
                 className="text-xs text-[#00ff41] hover:underline font-mono"
               >
-                View all 23 →
+                View all flavours ({products.length}) →
               </button>
             </div>
 

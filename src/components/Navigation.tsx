@@ -7,16 +7,18 @@ interface NavigationProps {
   currentTab: TabType;
   onSelectTab: (tab: TabType) => void;
   lowStockCount: number;
+  productCount?: number;
 }
 
 export const Navigation: React.FC<NavigationProps> = ({
   currentTab,
   onSelectTab,
   lowStockCount,
+  productCount,
 }) => {
   const tabs = [
     { id: 'dashboard' as TabType, label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'inventory' as TabType, label: 'Inventory (23)', icon: Boxes, badge: lowStockCount > 0 ? lowStockCount : undefined },
+    { id: 'inventory' as TabType, label: `Inventory${productCount ? ` (${productCount})` : ''}`, icon: Boxes, badge: lowStockCount > 0 ? lowStockCount : undefined },
     { id: 'record-sale' as TabType, label: 'Record Sale', icon: Zap, highlight: true },
     { id: 'sales-history' as TabType, label: 'Sales History', icon: History },
     { id: 'team' as TabType, label: 'Team', icon: Users },

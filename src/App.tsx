@@ -393,6 +393,7 @@ export default function App() {
         currentTab={currentTab}
         onSelectTab={setCurrentTab}
         lowStockCount={lowStockAlertCount}
+        productCount={products.length}
       />
 
       {/* Main Content Area */}

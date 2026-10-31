@@ -482,6 +482,23 @@ const INITIAL_PRODUCTS: Product[] = [
     canSize: '500ml / 16.9 fl oz',
     updatedAt: new Date().toISOString(),
   },
+  {
+    id: 'mst-24',
+    name: 'Monster Ultra Watermelon',
+    category: 'Ultra Series',
+    sku: 'MNST-UWM-24',
+    flavorProfile: 'Crisp, sweet, juicy summer watermelon burst with zero sugar',
+    accentColor: '#ff2a6d',
+    badgeColor: '#05668d',
+    stock: 0,
+    totalSold: 0,
+    stockReceived: 0,
+    lowStockThreshold: 5,
+    unitPrice: 2.99,
+    costPrice: 1.45,
+    canSize: '500ml / 16.9 fl oz',
+    updatedAt: new Date().toISOString(),
+  },
 ];
 
 function hashPassword(password: string): string {
