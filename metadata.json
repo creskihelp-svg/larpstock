@@ -1,0 +1,6 @@
+{
+  "name": "Monster Stock Manager",
+  "description": "Real-time inventory and sales management system for Monster Energy drink flavours with cloud synchronisation and atomic stock tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
